@@ -131,3 +131,15 @@ After doing so, redo everything stated from the Building Section.
 
 ##### For those who successfully built Resurrection Remix
 Well, Congratulations on your victory! Now, you have a .zip file that flashable to your device! Share it to the internet as you wish but be sure to contribute back and also give credits to the Resurrection Remix Team and its contributors! Do come and build Resurrection Remix another time as new code is improved upon after time. If you wish to contibute, feel free to make a pull request to the Ressurection Remix Team! See you again builder!
+
+repo init -u git://github.com/podobreev/Resurrection.git -b optimized-lollipop5.1
+
+repo sync -j2
+
+. build/envsetup.sh
+
+lunch
+
+make otatools -j2
+
+make otapackage -j2
